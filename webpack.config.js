@@ -3,11 +3,11 @@ const path = require('path');
 
 module.exports = {
   mode: 'development',
-  entry: './src/js/main.js',
+  entry: './src/main.js',
   output: {
     path: path.resolve(__dirname, './dist'),
     filename: 'bundle.js',
-    publicPath:"/assets/"
+    publicPath:"/dist/"
   },
 
     devServer: {
