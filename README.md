@@ -1,3 +1,10 @@
+// profile.js
+var firstName = 'Michael';
+var lastName = 'Jackson';
+var year = 1958;
+
+export {firstName, lastName, year};
+
 …or create a new repository on the command line
  echo "# 111" >> README.md
 git init
