@@ -24,7 +24,7 @@ export default class StarRating extends React.Component {
         const {totalStars} = this.props
         const {starsSelected} = this.state
         return ( 
-            <div className = "stat-rating" > {
+            <div className = "star-rating" > {
                 [...Array(totalStars)].map((n, i) =>
                         (<Star key = {i}
                             selected = {i < starsSelected}
