@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Star from './Start.js'
 import {Color} from './Color.js'
+import '../styles/css/ColorList.scss'
 
 export const ColorList = ({ colors=[] }) =>
     <div className="color-list">

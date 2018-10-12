@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {StarRating} from './StarRating.js'
+import '../styles/css/Color.scss'
 
 export const Color = ({ title, color, rating=0 }) =>
     <section className="color">

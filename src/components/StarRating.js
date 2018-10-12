@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Star from './Start.js'
-
+import '../styles/css/start.scss'
 
 export const StarRating = ({starsSelected = 0, totalStars = 5,onRate=f=>f}) =>
-    <div className = "stat-rating" > {
+    <div className = "star-rating" > {
         [...Array(totalStars)].map((n, i) =>
                 (<Star key = {i}
                     selected = {i < starsSelected}

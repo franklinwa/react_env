@@ -1,3 +1,7 @@
+#  一、安装sass-loader和node-sass依赖
+npm install sass-loader node-sass --save-dev
+
+# ES6 模块导出
 // profile.js
 var firstName = 'Michael';
 var lastName = 'Jackson';
