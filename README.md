@@ -16,7 +16,31 @@ $ git push origin dev
 3:查看一下远程仓库有几个分支
 
 $ git branch -a
- 
+
+# 删除分支
+
+删除本地分支 
+命令行 : $ git branch -d <BranchName>
+
+删除远程分支 
+命令行 : $ git push origin --delete <BranchName>
+
+#git merge 用来做分支合并，将其他分支中的内容合并到当前分支中。比如分支结构如下：
+
+                        master
+                         /
+C0 ---- C1 ---- C2 ---- C4
+                         \
+                         C3 ---- C5
+                                  \
+                                issueFix
+当前分支是master
+$ git checkout master
+
+把issueFix中的内容Merge进来：
+$ git merge issueFix
+
+
 # 如果希望用代码库中的文件完全覆盖本地工作版本. 方法如下:
 
 git reset --hard
