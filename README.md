@@ -1,6 +1,22 @@
 #  一、安装sass-loader和node-sass依赖
 npm install sass-loader node-sass --save-dev
 
+
+# git 本地给远程仓库创建分支 三步法
+命令如下:
+
+1:本地创建分支dev
+
+$ git branch dev
+
+2:下面是把本地分支提交到远程仓库
+
+$ git push origin dev
+
+3:查看一下远程仓库有几个分支
+
+$ git branch -a
+ 
 # 如果希望用代码库中的文件完全覆盖本地工作版本. 方法如下:
 
 git reset --hard
