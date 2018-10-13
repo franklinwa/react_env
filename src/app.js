@@ -1,101 +1,94 @@
 import React from 'react';
-import {ColorList} from './components/ColorList.js'
+import {WittnessList} from './components/WittnessList.js'
 import AddColorForm from './components/AddColorForm.js'
 
 // color 数据数组
-{
-    colors: [
-        {
-            "id": "0175d1f0-a8c6-41bf-8d02-df5734d829a4",
-            "title": "ocean at dusk",
-            "color": "#00c4e2",
-            "rating": 5
-        },
-        {
-            "id": "83c7ba2f-7392-4d7d-9e23-35adbe186046",
-            "title": "lawn",
-            "color": "#26ac56",
-            "rating": 3
-        },
-        {
-            "id": "a11e3995-b0bd-4d58-8c48-5e49ae7f7f23",
-            "title": "bright red",
-            "color": "#ff0000",
-            "rating": 0
-        },
-        {
-            "id": "0175d1f0-a8c6-41bf-8d02-df5734d829a4",
-            "title": "ocean at dusk",
-            "color": "#00c4e2",
-            "rating": 5
-        },
-        {
-            "id": "83c7ba2f-7392-4d7d-9e23-35adbe186046",
-            "title": "lawn",
-            "color": "#26ac56",
-            "rating": 3
-        },
-        {
-            "id": "a11e3995-b0bd-4d58-8c48-5e49ae7f7f23",
-            "title": "bright red",
-            "color": "#ff0000",
-            "rating": 0
-        }
-    ]
-}
+// {
+//     books= {
+//             "id": "0001",
+//             "name": "运河人家",
+//             "press": "海天出版社",
+//             "publish": "2018年1月"
+//            }
+    
+//     wittnesses= [
+//         {
+//             "id": "0001",
+//             "date": "2018年10月13日",
+//             "pages":[
+//                 {
+//                     "start":1,
+//                     "end"  :12
+//                 }
+//             ],
+//             "review":"心得感悟",
+//             "excerpts":[
+//                 {
+//                     "content":"摘录一",
+//                     "page"   :4
+//                 },
+//                 {
+//                     "content":"摘录二",
+//                     "page"   :5
+//                 },
+//                 {
+//                     "content":"摘录三",
+//                     "page"   :8
+//                 }
+//             ]
+//         }
+//     ]
+
+// }
 
 export default class App extends React.Component {
 
     constructor(props){
         super(props)
         this.state ={
-            colors: [
+            books:{
+                    "id": "0001",
+                    "name": "运河人家",
+                    "press": "海天出版社",
+                    "publish": "2018年1月"
+                    },
+            wittnesses: [
                 {
-                    "id": "0175d1f0-a8c6-41bf-8d02-df5734d829a4",
-                    "title": "ocean at dusk",
-                    "color": "#00c4e2",
-                    "rating": 5
-                },
-                {
-                    "id": "83c7ba2f-7392-4d7d-9e23-35adbe186046",
-                    "title": "lawn",
-                    "color": "#26ac56",
-                    "rating": 3
-                },
-                {
-                    "id": "a11e3995-b0bd-4d58-8c48-5e49ae7f7f23",
-                    "title": "bright red",
-                    "color": "#ff0000",
-                    "rating": 0
-                },
-                {
-                    "id": "0175d1f0-a8c6-41bf-8d02-df5734d829a4",
-                    "title": "ocean at dusk",
-                    "color": "#00c4e2",
-                    "rating": 5
-                },
-                {
-                    "id": "83c7ba2f-7392-4d7d-9e23-35adbe186046",
-                    "title": "lawn",
-                    "color": "#26ac56",
-                    "rating": 3
-                },
-                {
-                    "id": "a11e3995-b0bd-4d58-8c48-5e49ae7f7f23",
-                    "title": "bright red",
-                    "color": "#ff0000",
-                    "rating": 0
+                    "id": "0001",
+                    "date": "2018年10月13日",
+                    "pages":[
+                        {
+                            "start":1,
+                            "end"  :12
+                        }
+                    ],
+                    "review":"心得感悟",
+                    "excerpts":[
+                        {
+                            "content":"摘录一",
+                            "page"   :4
+                        },
+                        {
+                            "content":"摘录二",
+                            "page"   :5
+                        },
+                        {
+                            "content":"摘录三",
+                            "page"   :8
+                        }
+                    ]
                 }
             ]
+            
         }
 
     }
 
     render() {
-        const {colors} = this.state
+        const {books,wittnesses} = this.state
         return ( 
             <div className="app">
-                <ColorList colors={colors}/>
+                <WittnessList books={books} wittnesses={wittnesses}/>
             </div>
         )
 
