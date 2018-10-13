@@ -1,6 +1,20 @@
 #  一、安装sass-loader和node-sass依赖
 npm install sass-loader node-sass --save-dev
 
+# 如果希望用代码库中的文件完全覆盖本地工作版本. 方法如下:
+
+git reset --hard
+git pull
+
+# 本地分支的创建
+ 
+git checkout 当前分支
+
+git chechkou -b 分支名
+新建分支
+
+
+
 # ES6 模块导出
 // profile.js
 var firstName = 'Michael';
