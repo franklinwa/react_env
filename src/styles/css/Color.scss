@@ -66,4 +66,9 @@ section.color {
     color: darken($light-grey, 40%);
   }
 
+  p {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
 }

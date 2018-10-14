@@ -1,94 +1,62 @@
 import React from 'react';
-import {WittnessList} from './components/WittnessList.js'
+import WittnessList from './components/WittnessList.js'
 import AddColorForm from './components/AddColorForm.js'
-
-// color 数据数组
-// {
-//     books= {
-//             "id": "0001",
-//             "name": "运河人家",
-//             "press": "海天出版社",
-//             "publish": "2018年1月"
-//            }
-    
-//     wittnesses= [
-//         {
-//             "id": "0001",
-//             "date": "2018年10月13日",
-//             "pages":[
-//                 {
-//                     "start":1,
-//                     "end"  :12
-//                 }
-//             ],
-//             "review":"心得感悟",
-//             "excerpts":[
-//                 {
-//                     "content":"摘录一",
-//                     "page"   :4
-//                 },
-//                 {
-//                     "content":"摘录二",
-//                     "page"   :5
-//                 },
-//                 {
-//                     "content":"摘录三",
-//                     "page"   :8
-//                 }
-//             ]
-//         }
-//     ]
-
-// }
+import {books,wittnesses} from './components/data/datum.js'
+import AllRate from './components/heart/AllRate'
 
 export default class App extends React.Component {
 
     constructor(props){
         super(props)
         this.state ={
-            books:{
-                    "id": "0001",
-                    "name": "运河人家",
-                    "press": "海天出版社",
-                    "publish": "2018年1月"
-                    },
-            wittnesses: [
-                {
-                    "id": "0001",
-                    "date": "2018年10月13日",
-                    "pages":[
-                        {
-                            "start":1,
-                            "end"  :12
-                        }
-                    ],
-                    "review":"心得感悟",
-                    "excerpts":[
-                        {
-                            "content":"摘录一",
-                            "page"   :4
-                        },
-                        {
-                            "content":"摘录二",
-                            "page"   :5
-                        },
-                        {
-                            "content":"摘录三",
-                            "page"   :8
-                        }
-                    ]
-                }
-            ]
+            books:books,
+            wittnesses:wittnesses,
+            allRate: []
+          }
+          this.rateWittness = this.rateWittness.bind(this)
+          this.rateTotal = this.rateTotal.bind(this)
+
+        }
+        
+        rateWittness(id,rating) {
+            rating={
+                "quantity":(rating.selected==false ? rating.quantity+1 : rating.quantity-1),
+                "selected":!rating.selected}
+
+            
+            this.setState(prevState => ({
+                wittnesses: prevState.wittnesses.map(wittness =>
+                    (wittness.id !== id) ?
+                        wittness : {...wittness,rating}
+                    
+                    )
+            }))
+
+         
             
         }
-
-    }
+        rateTotal() {
+            
+            this.setState((prevState) => ({
+                
+                allRate: prevState.wittnesses.map(wittness =>
+                    wittness.rating.quantity)
+            }))
+            console.log("rateTotal已经执行")
+        }
+    
+        componentWillMount(){
+            this.rateTotal()
+        }
 
     render() {
-        const {books,wittnesses} = this.state
+        const {rateWittness,rateTotal} = this
+        const {books,wittnesses,allRate} = this.state
+        
         return ( 
             <div className="app">
-                <WittnessList books={books} wittnesses={wittnesses}/>
+                <AllRate allRate={allRate}/>
+                <WittnessList books={books} allRate={allRate} wittnesses={wittnesses}  onRate={rateWittness} rateTotal={rateTotal}/>
             </div>
         )
 
