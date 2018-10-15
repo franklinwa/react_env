@@ -95,6 +95,7 @@ export default class App extends React.Component {
         const {colors} = this.state
         return ( 
             <div className="app">
+                <AddColorForm />
                 <ColorList colors={colors}/>
             </div>
         )
