@@ -1,7 +1,7 @@
 import React from 'react';
 import {ColorList} from './components/ColorList.js'
 import AddColorForm from './components/AddColorForm.js'
-
+import {v4} from 'uuid'
 // color 数据数组
 {
     colors: [
@@ -88,14 +88,28 @@ export default class App extends React.Component {
                 }
             ]
         }
+        this.addColor = this.addColor.bind(this)
 
     }
-
+    addColor(title,color){
+        this.setState(prevState =>({
+            colors: [
+                ...prevState.colors,
+                {
+                    id: v4(),
+                    title,
+                    color,
+                    rating:0
+                }
+            ]
+        }))
+    }
     render() {
+        const {addColor} =this
         const {colors} = this.state
         return ( 
             <div className="app">
-                <AddColorForm />
+                <AddColorForm onNewColor={addColor}/>
                 <ColorList colors={colors}/>
             </div>
         )
