@@ -7,10 +7,10 @@ section.wittness-basic {
   border-right-color: darken($light-grey, 40%);
   margin: 1em;
   padding: 0;
-  flex-basis: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
+  // flex-basis: 100%;
+  // display: flex;
+  // flex-wrap: wrap;
+  // position: relative;
 
   @media screen and (min-width: $break-sm) {
     flex-basis: calc(50% - 2em - 4px);
@@ -32,7 +32,7 @@ section.wittness-basic {
     display: flex;
     justify-content: space-around;
     flex-wrap: nowrap;
-    flex-direction: column;
+    flex-direction: row;
     height: 100%;
     
   }
@@ -55,12 +55,12 @@ section.wittness-basic {
     border-radius: .5px;
   }
 
-  > div:last-child {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-top: .5em;
-  }
+  // > div:last-child {
+  //   display: flex;
+  //   justify-content: center;
+  //   width: 100%;
+  //   margin-top: .5em;
+  // }
 
   div.color {
     height: 100px;

@@ -3,9 +3,12 @@ import PropTypes from 'prop-types';
 
 // 无状态函数模块
 const EveryRate = ({quantity}) =>(
-    <span>
-        {quantity}
-    </span>)
+    <div>
+    <span>{quantity}
+    </span>
+    <span>{quantity}
+    </span>
+    </div>)
 
 EveryRate.propTypes = {
     quantity: PropTypes.number
