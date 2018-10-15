@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../heart.scss'
+import '../../styles/css/heart.scss'
 // 无状态函数模块
 const Heart = ({selected,onClick = f => f}) =>(
     <div className = {(selected) ? "heart selected" : "heart"}

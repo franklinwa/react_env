@@ -3,7 +3,7 @@ import WittnessList from './components/WittnessList.js'
 import AddColorForm from './components/AddColorForm.js'
 import {books,wittnesses} from './components/data/datum.js'
 import AllRate from './components/heart/AllRate'
-
+import './styles/css/App.scss'
 export default class App extends React.Component {
 
     constructor(props){

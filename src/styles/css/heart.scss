@@ -3,8 +3,8 @@
     transform:scale(0.16,0.16);
     width: 5px;
     height: 20px;
-    position: relative;
-  
+    display: block;
+    float: left;
     &:before {
         content: " ";
         border: 0 solid transparent;
@@ -18,7 +18,7 @@
         -ms-transform: rotate(-45deg);
         -o-transform: rotate(-45deg);
         -webkit-transform: rotate(-45deg);
-        position: absolute;
+        display: block;
         left: 20px;
         }
         
@@ -35,7 +35,7 @@
       -ms-transform: rotate(45deg);
       -o-transform: rotate(45deg);
       -webkit-transform: rotate(45deg);
-      position: absolute;
+      display: block;
       left: 48px;
       top: 0px;
   
@@ -48,4 +48,7 @@
         background: red;
       }
       }
+    }
+    .Hblock {
+      display: block;
     }
