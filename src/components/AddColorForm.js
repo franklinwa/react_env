@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types';
-import '../styles/AddColorForm.scss'
+import '../styles/css/AddColorForm.scss'
 
 
 const AddColorForm = ({onNewColor=f=>f})=>{
