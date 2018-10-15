@@ -8,6 +8,9 @@ const EveryRate = ({quantity}) =>(
          {console.log(quantity)}
 
     </div>)
-
+    
+EveryRate.propTypes = {
+    quantity: PropTypes.number
+}
 
 export default EveryRate

@@ -7,5 +7,7 @@ const AllRate = ({allRate=[]}) =>(
          <p>{(allRate.length==0)? "目前还没有喜欢的朋友..." : `本阅享见证共${allRate.reduce((n,x)=>(n+x))}个喜欢`}</p>
     </div>)
 
-
+AllRate.propTypes = {
+    allRate: PropTypes.array
+}
 export default AllRate
