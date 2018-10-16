@@ -1,10 +1,10 @@
 .heart {
     cursor: pointer;
-    // transform:scale(0.1,0.1);
-    // width: 55px;
-    // height: 5px;
-    // display: block;
-    // float: left;
+    transform:scale(0.1,0.1);
+    width: 55px;
+    height: 5px;
+    display: block;
+    float: left;
     &:before {
         content: " ";
         border: 0 solid transparent;
