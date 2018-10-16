@@ -1,8 +1,8 @@
 @import "globals";
 
-section.wittness-basic {
+section.wittness-review {
   @include wittness;
-
+  @include box;
 .wittness {
     display: flex;
     justify-content:flex-end;
@@ -14,11 +14,6 @@ section.wittness-basic {
     
   }
 
-.content{
-
-  
-
-}
 
 
   h1 {

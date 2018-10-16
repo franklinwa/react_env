@@ -10,9 +10,13 @@ h1 {
 
 p {
   flex-basis: 100%;
-  text-align: left;
   text-indent: 2em;
   line-height: 1.8em;
+  text-align:justify;
+  text-justify:inter-ideograph;/*IE*/
+
+  -webkit-margin-before: 0em;  
+  -webkit-margin-after: 0em;
 }
 
 span{
@@ -26,7 +30,7 @@ span{
 body {
 
   @include clear;
-  @include fade-bg($light, $light-grey);
+
 
   div.app {
     display: flex;

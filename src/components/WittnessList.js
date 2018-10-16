@@ -14,7 +14,8 @@ export default class WittnessList extends React.Component{
 
     render() {
         return ( 
-                <div className="wittness-list">
+            <section className="wittness-excerpt box">
+                <div>
                     {
                     
                         (this.props.books.length===0) ? 
@@ -28,6 +29,7 @@ export default class WittnessList extends React.Component{
                     }
     
                 </div>
+                </section>
         )
 
     }

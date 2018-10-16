@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {WittnessExcerpt} from './WittnessExcerpt.js'
-import '../styles/css/ColorList.scss'
+import '../styles/css/WittnessExcerpt.scss'
 
 export const WittnessExcerptList = ({ excerpts=[] }) =>
-    <div className="wittness-excerpt-list">
+<section className="wittness-excerpt">
         {
             (excerpts.length===0) ? 
             <p>还没有阅享摘录...(增加阅享摘录.)</p> : 
@@ -18,4 +18,4 @@ export const WittnessExcerptList = ({ excerpts=[] }) =>
                 
         }
     
-    </div>
+    </section>
