@@ -10,7 +10,7 @@
         "id": "0000",
         "rating":
             {
-                "quantity":40,
+                "quantity":45540,
                 "selected":false
             },
         "date": "2018年10月13日",

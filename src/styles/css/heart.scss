@@ -1,9 +1,10 @@
 
 .heart {
   transform:scale(0.1,0.1);
-  width: 55px;
-  height: 5px;
+  width: 35px;
+  height: 10px;
   position: relative;
+  margin-bottom: 12px;
 
   &:before {
       content: " ";
