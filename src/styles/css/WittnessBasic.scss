@@ -26,16 +26,20 @@ section.wittness-basic {
 
   @media screen and (min-width: $break-xl) {
     flex-basis: calc(16.66666% - 2em - 4px);
-
+    
   }
-  .wittness {
+  
+.wittness {
     display: flex;
-    justify-content: space-around;
+    justify-content:flex-end;
     flex-wrap: nowrap;
     flex-direction: row;
     height: 100%;
     
   }
+
+
+
 
   h1 {
     font-family: Verdana, sans-serif;
@@ -53,6 +57,7 @@ section.wittness-basic {
     @include fade-bg($light, $light-grey);
     padding: .75em;
     border-radius: .5px;
+
   }
 
   // > div:last-child {
@@ -74,7 +79,5 @@ section.wittness-basic {
     font-family: monospace;
     color: darken($light-grey, 40%);
   }
-
-
 
 }
