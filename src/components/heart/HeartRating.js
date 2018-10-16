@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Heart from './Heart.js'
-import './heart.scss'
+import '../../styles/css/heart.scss'
 
 export const HeartRating = ({heartSelected, onRate=f=>f}) =>
     <div className = "heart-rating" > 
