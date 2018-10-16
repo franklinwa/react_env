@@ -1,0 +1,54 @@
+.heart {
+    cursor: pointer;
+    transform:scale(0.16,0.16);
+    width: 5px;
+    height: 20px;
+    display: block;
+    float: left;
+    &:before {
+        content: " ";
+        border: 0 solid transparent;
+        -moz-border-radius: 100px;
+        -webkit-border-radius: 100px;
+        border-radius: 100px 100px 0 0;
+        width: 80px;
+        height: 120px;
+        background: #aaa;
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        display: block;
+        left: 20px;
+        }
+        
+      &:after {
+      content: " ";
+      border: 0 solid transparent;
+      -moz-border-radius: 100px;
+      -webkit-border-radius: 100px;
+      border-radius: 100px 100px 0 0;
+      width: 80px;
+      height: 120px;
+      background: #aaa;
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      display: block;
+      left: 48px;
+      top: 0px;
+  
+      }
+      &.selected {
+        &:after  {
+        background: red;
+      }
+        &::before  {
+        background: red;
+      }
+      }
+    }
+    .Hblock {
+      display: block;
+    }

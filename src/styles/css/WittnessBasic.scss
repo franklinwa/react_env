@@ -1,16 +1,16 @@
 @import "globals";
 
-section.color {
+section.wittness-basic {
   @include shadow;
   border: 2px solid $light-grey;
   border-bottom-color: darken($light-grey, 40%);
   border-right-color: darken($light-grey, 40%);
   margin: 1em;
   padding: 0;
-  flex-basis: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
+  // flex-basis: 100%;
+  // display: flex;
+  // flex-wrap: wrap;
+  // position: relative;
 
   @media screen and (min-width: $break-sm) {
     flex-basis: calc(50% - 2em - 4px);
@@ -26,6 +26,15 @@ section.color {
 
   @media screen and (min-width: $break-xl) {
     flex-basis: calc(16.66666% - 2em - 4px);
+
+  }
+  .wittness {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    height: 100%;
+    
   }
 
   h1 {
@@ -46,12 +55,12 @@ section.color {
     border-radius: .5px;
   }
 
-  > div:last-child {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-top: .5em;
-  }
+  // > div:last-child {
+  //   display: flex;
+  //   justify-content: center;
+  //   width: 100%;
+  //   margin-top: .5em;
+  // }
 
   div.color {
     height: 100px;
@@ -66,9 +75,6 @@ section.color {
     color: darken($light-grey, 40%);
   }
 
-  p {
-    flex-basis: 100%;
-    text-align: center;
-  }
+
 
 }
