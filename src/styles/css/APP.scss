@@ -15,6 +15,14 @@ p {
   line-height: 1.8em;
 }
 
+span{
+  font-size: 12px;
+  padding: 5px;
+
+  line-height: 20px;
+  vertical-align:middle;
+}
+
 body {
 
   @include clear;
