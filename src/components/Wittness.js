@@ -11,9 +11,9 @@ export const Wittness = ({ wittness,books,allRate,onRate=f=>f }) =>
        <div>
 
            <WittnessBasic {...wittness} {...books}  onRate={onRate}/>
-           <p>精彩摘录</p>
+           
            <WittnessExcerptList {...wittness}/>
-           <p>心得感悟</p>
+           
            <WittnessReview {...wittness}/>
 
         

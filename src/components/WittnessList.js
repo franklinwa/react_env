@@ -14,7 +14,7 @@ export default class WittnessList extends React.Component{
 
     render() {
         return ( 
-            <section className="wittness-excerpt box">
+            <section>
                 <div>
                     {
                     

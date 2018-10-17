@@ -24,23 +24,17 @@ $break-xl: 2000px;
 
 @mixin box {
 	
+  display: flex;
+  
 	height:100%;
 	background:white;
-	margin:40px auto;
+	margin:40px 10px;
 }
 
-@mixin  wittness-excerpt {
- 
-  margin: 1em 0.5em;
-  padding: 10px 10px;
-  // flex-basis: 100%;
-  // display: flex;
-  // flex-wrap: wrap;
-  // position: relative;
-
+@mixin  effect {
   position: relative;
 
-  &:before, :after
+  &:before, &:after
   {
     z-index:-1;
     position: absolute;
@@ -50,9 +44,9 @@ $break-xl: 2000px;
     width: 50%;
     top: 80%;
     max-width:300px;
-    background: #777;
-    box-shadow: 0 15px 10px #777;
-    transform: rotate(-3deg);
+    background: #aaa;
+    box-shadow: 0 15px 10px #aaa;
+    transform: rotate(-2deg);
   }
   &:after
   {

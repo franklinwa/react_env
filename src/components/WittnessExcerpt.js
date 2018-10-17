@@ -3,13 +3,16 @@ import PropTypes from 'prop-types';
 
 
 import '../styles/css/WittnessExcerpt.scss'
-import { HeartRating } from './heart/HeartRating';
+import {WittnessExcerptContent} from './WittnessExcerptContent.js';
 
-export const WittnessExcerpt = ({ content, page }) =>
+export const WittnessExcerpt = ({ excerpts=[] }) => 
+        <div>
+            <p>阅享见证</p>
+            {
+                excerpts.map((excerpt,index) =>(
+                    <WittnessExcerptContent key={index} {...excerpt}/>  )    
+                )
+            }
 
-       
-       <div>
-       <p>{content}</p>
-       <p>——P.{page}</p>
-       </div>
-
+        </div>
+   

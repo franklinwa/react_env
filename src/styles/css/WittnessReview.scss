@@ -3,6 +3,8 @@
 section.wittness-review {
   @include wittness;
   @include box;
+  @include effect;
+
 .wittness {
     display: flex;
     justify-content:flex-end;

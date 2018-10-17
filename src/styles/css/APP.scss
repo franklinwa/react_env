@@ -7,11 +7,16 @@ html, body, div#react-container {
 h1 {
   @include clear;
 }
-
+p , span{
+  font-size: 12px;
+  letter-spacing: 2px;
+}
 p {
+
   flex-basis: 100%;
   text-indent: 2em;
-  line-height: 1.8em;
+
+  line-height: 2.2em;
   text-align:justify;
   text-justify:inter-ideograph;/*IE*/
 
@@ -20,12 +25,13 @@ p {
 }
 
 span{
-  font-size: 12px;
+
   padding: 5px;
 
   line-height: 20px;
   vertical-align:middle;
 }
+
 
 body {
 

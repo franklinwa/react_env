@@ -5,10 +5,14 @@ import PropTypes from 'prop-types';
 import '../styles/css/WittnessReview.scss'
 
 export const WittnessReview = ({ review }) =>
-    <section className="wittness-review box">
+    <section className="wittness-review">
        
-       <div className="wittness-review">
-            <p>{review}</p>
+       <div className="box efect">
+       <p>心得感悟</p>
+       <div>
+           <p>{review}</p>
+       </div>
+            
        </div>
 
     </section>

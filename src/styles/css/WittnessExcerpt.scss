@@ -1,8 +1,9 @@
 @import "globals";
 
 section.wittness-excerpt {
-  @include wittness-excerpt;
+  @include wittness;
   @include box;
+  @include effect;
   
 .wittness {
     display: flex;
