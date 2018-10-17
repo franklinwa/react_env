@@ -7,6 +7,6 @@ import { HeartRating } from './heart/HeartRating';
 
 export const WittnessExcerptContent = ({ content,page }) =>
     <div>
-       <p>{content}</p>
-       <p>——P.{page}</p>
+       <p class="excerpt-content">{content}</p>
+       <p class="page-number">——P.{page}</p>
     </div>

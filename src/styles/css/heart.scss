@@ -7,7 +7,7 @@
   margin-bottom: 12px;
 
   &:before {
-      content: " ";
+      content: "";
       border: 0 solid transparent;
       -moz-border-radius: 100px;
       -webkit-border-radius: 100px;
@@ -24,7 +24,7 @@
       }
       
     &:after {
-    content: " ";
+    content: "";
     border: 0 solid transparent;
     -moz-border-radius: 100px;
     -webkit-border-radius: 100px;
@@ -37,8 +37,8 @@
     -o-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     position: absolute;
-    left: 48px;
-    top: 0px;
+    left: 49px;
+    top: 5px;
 
     }
     &.selected {
@@ -51,6 +51,14 @@
     }
   }
 
+.like{
+  color: gray;
+  font-weight: bold;
+  &.selected {
+    color: red;
+    font-weight: bold;
+  }
+}
   
     .Hblock {
       display: block;

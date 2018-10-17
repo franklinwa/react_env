@@ -8,9 +8,9 @@ export const WittnessReview = ({ review }) =>
     <section className="wittness-review">
        
        <div className="box efect">
-       <p>心得感悟</p>
+       <h1 className="title">心得感悟</h1 >
        <div>
-           <p>{review}</p>
+           <p className="review-content">{review}</p>
        </div>
             
        </div>

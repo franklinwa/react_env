@@ -17,7 +17,7 @@ export const WittnessBasic = ({ name,date,pages,rating,onRate=f=>f}) =>
            
             <div className="wittness wittness-item">
            <Heart {...rating}  onClick = {() => (onRate())}/>
-           <EveryRate {...rating}/>
+
            </div>
        </div>
        </section>

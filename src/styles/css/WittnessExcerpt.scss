@@ -15,13 +15,18 @@ section.wittness-excerpt {
     height: 100%;
     
   }
-
-
+  .page-number{
+    text-align:right;
+    line-height: 3em;
+  }
+  .excerpt-content{
+    margin-top: 10px;
+  }
 
   h1 {
-    font-family: Verdana, sans-serif;
+    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
     text-align: center;
-    padding: .5em;
+    
     flex-basis: calc(100% - 1em);
   }
 
