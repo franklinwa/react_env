@@ -13,7 +13,7 @@ export const WittnessExcerpt = ({ excerpts=[] }) =>
            
             {
                 excerpts.map((excerpt,index) =>(
-                    <WittnessExcerptContent key={index} {...excerpt}/>  )    
+                    <WittnessExcerptContent key={index} seq={index}  {...excerpt}/>  )    
                 )
             }
 
