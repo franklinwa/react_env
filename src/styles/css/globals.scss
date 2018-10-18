@@ -86,7 +86,13 @@ $break-xl: 2000px;
     letter-spacing: 4px;
 
   }
-  
+  .wrap-after {
+    shape-outside: polygon(100% 0,100% 100%,0% 100%,100% 100%,0% 0);
+    float: right;
+    width: 100px;
+    height: 100px;
+}
+
   .div-opacity{
     filter:alpha(Opacity=60);-moz-opacity:0.6;opacity: 0.6;
   }

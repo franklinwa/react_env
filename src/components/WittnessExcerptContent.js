@@ -6,7 +6,12 @@ import '../styles/css/WittnessExcerpt.scss'
 import { HeartRating } from './heart/HeartRating';
 
 export const WittnessExcerptContent = ({ content,page }) =>
-    <div>
-       <p class="excerpt-content">{content}</p>
-       <p class="page-number">——P.{page}</p>
+    <div className="text-section">
+         <div className="wrap-after"></div>
+      <div>
+
+            <p className="excerpt-content">{content}</p>
+            <p className="page-number">——P.{page}</p>
+      </div>
+
     </div>
