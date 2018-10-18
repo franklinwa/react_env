@@ -7,7 +7,9 @@ import {WittnessExcerptContent} from './WittnessExcerptContent.js';
 
 export const WittnessExcerpt = ({ excerpts=[] }) => 
         <div>
-            <h1 class="title">阅享见证</h1>
+            <div class="wrap div-opacity">
+                <div class="ribbon6 title">精彩摘录</div >
+            </div>
             {
                 excerpts.map((excerpt,index) =>(
                     <WittnessExcerptContent key={index} {...excerpt}/>  )    

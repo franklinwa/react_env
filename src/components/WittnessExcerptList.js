@@ -7,6 +7,7 @@ import { Wittness } from './Wittness.js';
 export const WittnessExcerptList = ({ excerpts=[] }) =>
 <section className="wittness-excerpt">
         <div className="box effect">
+       
         {
             (excerpts.length===0) ? 
             <p>还没有阅享摘录...(增加阅享摘录.)</p> : <WittnessExcerpt excerpts={excerpts}/>
@@ -18,5 +19,6 @@ export const WittnessExcerptList = ({ excerpts=[] }) =>
                      
         }
         </div>
+       
     
     </section>

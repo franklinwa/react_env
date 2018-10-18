@@ -28,7 +28,7 @@ $break-xl: 2000px;
   
 	height:100%;
 	background:white;
-	margin:40px 10px;
+	margin:40px 20px;
 }
 
 @mixin  effect {
@@ -81,9 +81,14 @@ $break-xl: 2000px;
   .title{
     font-size: 16px;
     font-weight: bold;
-    text-align: left;
+    text-align: center;
     font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
     letter-spacing: 4px;
+
+  }
+  
+  .div-opacity{
+    filter:alpha(Opacity=60);-moz-opacity:0.6;opacity: 0.6;
   }
   // flex-basis: 100%;
   // display: flex;

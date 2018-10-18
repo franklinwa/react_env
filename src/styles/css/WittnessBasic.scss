@@ -27,6 +27,11 @@ section.wittness-basic {
     text-align: center;
     padding: .5em;
     flex-basis: calc(100% - 1em);
+    &.main{
+      color:white;
+      padding: 0px 0px 0px 0px;
+   
+    }
   }
 
   button {

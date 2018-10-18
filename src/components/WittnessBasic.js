@@ -10,6 +10,8 @@ export const WittnessBasic = ({ name,date,pages,rating,onRate=f=>f}) =>
 
        <section className="wittness-basic">
        <div>
+       
+                <div class="ribbon5 title "><h1 class="main">第一天阅享见证</h1></div >
            
            <div className="content">
                <p>{date},阅读《{name}》第{pages[0].start}-{pages[0].end}页，特此见证，感谢坚持读！特此见证，感谢坚持读！</p>
