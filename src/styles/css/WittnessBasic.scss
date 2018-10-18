@@ -23,15 +23,18 @@ section.wittness-basic {
     width:30px;
   }
   h1 {
-    font-family: Verdana, sans-serif;
+    font-family:Hiragino Sans GB, MicroSoft YaHei,Arial, Helvetica, sans-serif;
     text-align: center;
     padding: .5em;
     flex-basis: calc(100% - 1em);
     &.main{
       color:white;
       padding: 0px 0px 0px 0px;
-   
+      font-family: Hiragino Sans GB, MicroSoft YaHei,Arial, Helvetica, sans-serif;
+      font-size: 16px;
     }
+
+
   }
 
   button {
@@ -65,5 +68,11 @@ section.wittness-basic {
     font-family: monospace;
     color: darken($light-grey, 40%);
   }
+
+  .basic-content{
+    margin-top: 20px;
+  }
+
+
 
 }

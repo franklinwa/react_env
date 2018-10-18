@@ -22,8 +22,8 @@ export default class WittnessList extends React.Component{
                         <p>还没有选择阅读的书籍...(选择一本.)</p> :
                         (console.log(this.props.books.name),(this.props.wittnesses.length === 0) ?
                             <p>目前，还没有建立阅享见证.(马上建立？)</p> :
-                            this.props.wittnesses.map(wittness =>(
-                                <Wittness key={wittness.id} wittness={wittness} books={this.props.books} allRate={this.props.allRate}  onRate={()=>(this.props.onRate(wittness.id,wittness.rating),this.props.rateTotal())}/>
+                            this.props.wittnesses.map((wittness,index) =>(
+                                <Wittness key={wittness.id} day={index} wittness={wittness} books={this.props.books} allRate={this.props.allRate}  onRate={()=>(this.props.onRate(wittness.id,wittness.rating),this.props.rateTotal())}/>
                                 )
                             ) )
                     }

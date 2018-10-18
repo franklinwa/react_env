@@ -2,21 +2,28 @@
 
 html, body, div#react-container {
   min-height: 100%;
+  color: #444;
+  background: #ffe;
 }
 
 h1 {
   @include clear;
 }
 p , span{
-  font-size: 12px;
-  letter-spacing: 2px;
+  font-family: Hiragino Sans GB, MicroSoft YaHei;
+  letter-spacing: 1px;
+  &.day{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    
+  }
 }
 p {
-
+font-size: 16px;
   flex-basis: 100%;
   text-indent: 2em;
 
-  line-height: 2.2em;
+  line-height: 2;
   text-align:justify;
   text-justify:inter-ideograph;/*IE*/
 
@@ -25,8 +32,9 @@ p {
 }
 
 
-span{
 
+span{
+  font-size: 12px;
   padding: 5px;
   line-height: 20px;
   vertical-align:middle;
