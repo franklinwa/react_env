@@ -55,20 +55,6 @@ $break-xl: 2000px;
     left: auto;
   }
 
-  @media screen and (min-width: $break-sm) {
-    flex-basis: calc(50% - 2em - 4px);
-  }
-
-  @media screen and (min-width: $break-md) {
-    flex-basis: calc(33.33333% - 2em - 4px);
-  }
-
-  @media screen and (min-width: $break-lg) {
-    flex-basis: calc(25% - 2em - 4px);
-  }
-
-  @media screen and (min-width: $break-xl) {
-    flex-basis: calc(16.66666% - 2em - 4px);}
 }
 
 @mixin  wittness {
@@ -104,18 +90,20 @@ $break-xl: 2000px;
 
   
 
-  @media screen and (min-width: $break-sm) {
-    flex-basis: calc(50% - 2em - 4px);
-  }
 
-  @media screen and (min-width: $break-md) {
-    flex-basis: calc(33.33333% - 2em - 4px);
-  }
-
-  @media screen and (min-width: $break-lg) {
-    flex-basis: calc(25% - 2em - 4px);
-  }
-
-  @media screen and (min-width: $break-xl) {
-    flex-basis: calc(16.66666% - 2em - 4px);}
 }
+@media screen and (min-width: $break-sm) {
+  flex-basis: calc(50% - 2em - 4px);
+  width:80%;
+}
+
+@media screen and (min-width: $break-md) {
+  flex-basis: calc(33.33333% - 2em - 4px);
+}
+
+@media screen and (min-width: $break-lg) {
+  flex-basis: calc(25% - 2em - 4px);
+}
+
+@media screen and (min-width: $break-xl) {
+  flex-basis: calc(16.66666% - 2em - 4px);}

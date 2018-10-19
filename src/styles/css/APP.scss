@@ -10,7 +10,7 @@ h1 {
   @include clear;
 }
 p , span{
-  font-family: Hiragino Sans GB, MicroSoft YaHei;
+  font-family: MicroSoft YaHei;
   letter-spacing: 1px;
   &.day{
     font-family: Arial, Helvetica, sans-serif;
@@ -19,11 +19,11 @@ p , span{
   }
 }
 p {
-font-size: 16px;
+  font-size: 16px;
   flex-basis: 100%;
   text-indent: 2em;
 
-  line-height: 2;
+  line-height: 2.3;
   text-align:justify;
   text-justify:inter-ideograph;/*IE*/
 
@@ -44,13 +44,26 @@ span{
 body {
 
   @include clear;
-
-
-  div.app {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+  @media screen and (min-width: $break-sm) {
+    // flex-basis: calc(50% - 2em - 4px);
+    width:700px;
+    margin:0 auto;
   }
+
+  @media screen and (min-width: $break-md) {
+    // flex-basis: calc(33.33333% - 2em - 4px);
+    width:750px;
+    margin:0 auto;
+  }
+
+  @media screen and (min-width: $break-lg) {
+    flex-basis: calc(25% - 2em - 4px);
+    width:800px;
+    margin:0 auto;
+  }
+
+  @media screen and (min-width: $break-xl) {
+    flex-basis: calc(16.66666% - 2em - 4px);}
 
 }
 
