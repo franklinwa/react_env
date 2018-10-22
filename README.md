@@ -53,6 +53,18 @@ git checkout 当前分支
 git chechkou -b 分支名
 新建分支
 
+把新建的本地分支push到远程服务器，远程分支与本地分支同名（当然可以随意起名）：
+
+$ git push origin dbg_lichen_star:dbg_lichen_star
+
+想要新建一个分支并同时切换到那个分支上，你可以运行一个带有 -b 参数的 git checkout 命令：
+
+$ git checkout -b iss53
+Switched to a new branch "iss53"
+它是下面两条命令的简写：
+
+$ git branch iss53
+$ git checkout iss53
 
 
 # ES6 模块导出
