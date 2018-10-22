@@ -10,6 +10,10 @@ git push -u origin master
  git remote add origin https://github.com/franklinwa/111.git
 git push -u origin master
 
+git push origin develop:master -f
+就可以把本地的develop分支强制(-f)推送到远程master
+
+
 # 如何布局react
 https://zhuanlan.zhihu.com/p/39799393
 
